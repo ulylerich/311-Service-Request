@@ -340,7 +340,7 @@ ggplot(service1, aes(request.year)) +
 
 service1$Reported.using.mobile. <- as.factor(service1$Reported.using.mobile.)
 
-# check if mobile is used more to submit request
+# check if mobile is used more to submit request with plot
 mobile = group_by(service1, Reported.using.mobile.)
 mobile_counts = summarise(mobile, count = n())
 

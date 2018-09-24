@@ -70,7 +70,6 @@ ggplot(yearly_counts1718, aes(x = request.year , y = count)) +
   ggtitle("Request for 2018 and unil August 2017") + 
   theme(plot.title=element_text(size=16, hjust = 0.5)) 
 
-
 # Sort issue type in decreasing order and plot with ggplot
 library(dplyr)
 library(ggplot2)
@@ -86,8 +85,6 @@ ggplot(service1, aes(Issue.Type)) +
   xlab ("Issue Type") +
   ylab ("Number of Request") +
   coord_flip()
-
-
 
 #There are 578 "other" in issue type. let check if some issue type are being repeated within "other" 
 #or another can be categorized
